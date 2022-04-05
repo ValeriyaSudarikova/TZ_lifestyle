@@ -1,0 +1,66 @@
+.footer {
+    padding-top: 150px;
+    min-height: 360px;
+    &__wrapper {
+        display: flex;
+        align-items: baseline;
+    }
+    &__item {
+        margin-left: 131px;
+        &-logo {
+            width: 315px;
+        }
+        &-about {
+            width: 312px;
+        }
+        &-social {
+            margin-top: 20px;
+            width: 138px;
+            display: flex;
+            justify-content: space-between;
+        }
+        &-header {
+            width: 184px;
+        }
+        &:nth-child(1) {
+            margin-left: 0;
+        }
+        &-links {
+            margin-top: 25px;
+            a:hover {
+                text-decoration: none;
+                color: $main-color;
+            }
+        }
+        &-location {
+            position: relative;
+            img {
+                position: absolute;
+                left: -40px
+            }
+        }
+        &-phone {
+            display: block;
+            margin-top: 24px;
+            position: relative;
+            img {
+                position: absolute;
+                left: -40px
+            }
+        }
+        &-email {
+            margin-top: 24px;
+            position: relative;
+            img {
+                position: absolute;
+                left: -40px
+            }
+        }
+    }
+    &__rigths {
+        display: block;
+        text-align: center;
+        margin-top: 94px;
+        margin-left: 190px;
+    }
+}
