@@ -28,12 +28,25 @@
             color: #fff;
             opacity: 1;
         }
+        &.black {
+            opacity: 1;
+        }
+        &.link {
+            color: $main-color;
+            text-decoration: underline;
+        }
     }
     &_fz30 {
         font-style: normal;
         font-weight: 500;
         font-size: 30px;
         line-height: 45px;
+    }
+    &_fz32 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 48px;
     }
     &_fz36 {
         font-style: normal;
