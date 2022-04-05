@@ -20,8 +20,8 @@
                     <a class="menu__links-item text_fz20" href="#">Home</a>
                     <a class="menu__links-item text_fz20" href="#">Find work</a>
                     <a class="menu__links-item text_fz20" href="#">Find Freelancers</a>
-                    <a class="menu__links-item text_fz20" href="#">Log In</a>
-                    <a class="menu__links-item text_fz20" href="#">Sign Up</a>
+                    <a id="sign-in" class="menu__links-item text_fz20" href="#">Log In</a>
+                    <a id="sign-up" class="menu__links-item text_fz20" href="#">Sign Up</a>
                 </div>
                 <button class="menu__btn text_fz20 white">Post a project</button>
             </div>
@@ -223,25 +223,36 @@
         </div>
     </footer>
     <div class="overlay">
-        <div class="modal sign-up">
+        <div class="modal modal__sign-up">
+            <img src="icons/close.svg" alt="" class="modal__close modal__close-up">
             <form action="#" class="modal__form">
-                <input class="modal__input-name" type="text" placeholder="enter your name">
-                <input class="modal__input-pass" type="password" placeholder="enter your password">
-                <input type="password" class="modal__input-check">
-                <button class="modal__btn">
+                <div class="modal__hello text_fz36">
+                    Welcome to <span  class="text_fz36 blue">Spaceland</span>
+                </div>
+                <input class="modal__input name" type="text" placeholder="enter your name">
+                <input class="modal__input pass" type="password" placeholder="enter your password">
+                <input type="password" class="modal__input check" placeholder="repeat your password">
+                <button class="modal__btn text_fz36 white">
                     Sign Up
                 </button>
             </form>
         </div>
-        <div class="modal sign-in">
+        <div class="modal modal__sign-in">
+            <img src="icons/close.svg" alt="" class="modal__close modal__close-in">
+            <div class="modal__hello text_fz36">
+                Welcome back to <span  class="text_fz36 blue">Spaceland</span>
+            </div>
             <form action="#" class="modal__form">
-                <input class="modal__input-name" type="text" placeholder="enter your name">
-                <input class="modal__input-pass" type="password" placeholder="enter your password">
-                <button class="modal__btn">
+                <input class="modal__input name" type="text" placeholder="enter your name">
+                <input class="modal__input pass" type="password" placeholder="enter your password">
+                <button class="modal__btn text_fz36 white">
                     Sign In
                 </button>
             </form>
         </div>
     </div>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
