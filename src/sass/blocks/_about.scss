@@ -1,0 +1,39 @@
+.about {
+    min-width: 800px;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+    }
+    &__item {
+        position: relative;
+        &:nth-child(2) {
+            margin-left: 102px;
+            min-width: 516px;
+            text-align: right;
+        }
+    }
+    &__img {
+        width: 585px;
+        margin-top: 117px;
+    }
+    &__ads {
+        padding: 27px 13px;
+        position: absolute;
+        width: 162px;
+        height: 140px;
+        left: 298px;
+        top: 148px;
+        text-align: center;
+        box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        &.proj {
+            width: 297px;
+            height: 132px;
+            left: 339px;
+            top: 318px;
+        }
+    }
+    &__descr {
+        margin-top: 20px;
+    }
+}

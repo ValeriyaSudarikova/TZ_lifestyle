@@ -1,0 +1,40 @@
+.pannel {
+    &__wrapper {
+        margin-top: 160px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 41px 53px;
+        width: 1267px;
+        height: 325px;
+        background-color: #fff;
+        box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+    }
+    &__item {
+        width: 305px;
+        height: 243px;
+        &-round {
+            margin: 0 auto;
+            display: block;
+            position: relative;
+            width: 111px;
+            height: 111px;
+            background-color: #F2FAFA;
+            border-radius: 100%;
+            object-fit: contain;
+        }
+        &-icon {
+            display: block;
+            margin: 0 auto;
+            padding-top: 25px;
+        }
+        &-header {
+            text-align: center;
+        }
+        &-descr {
+            text-align: center;
+        }
+    }
+}

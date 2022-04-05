@@ -2,7 +2,7 @@
 @import 'base/mixins';
 
 * {
-    font-family: Poppins sans-serif;
+    font-family: 'Poppins';
     margin: 0;
     padding: 0;
 }
@@ -14,4 +14,8 @@
 }
 
 
-@import 'blocks/menu.scss'
+@import 'blocks/menu.scss';
+@import 'blocks/text';
+@import 'blocks/promo';
+@import 'blocks/pannel';
+@import 'blocks/about';

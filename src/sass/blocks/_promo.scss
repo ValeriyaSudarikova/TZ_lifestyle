@@ -1,0 +1,73 @@
+.promo {
+    position: relative;
+    min-height: 738px;
+    &__bg {
+        position: absolute;
+        width: 100%;
+        height: 981px;
+        z-index: -3;
+    }
+    &__img {
+        position: absolute;
+        left: 630px;
+        top: 129px;
+    }
+    &__wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        padding-top: 148px;
+    }
+    &__text {
+        margin-top: 68px;
+        &_header {
+            width: 690px;
+        }
+        &_descr {
+            margin-top: 17px;
+            width: 588px;
+        }
+    }
+    &__btn {
+        margin-top: 100px;
+        width: 250px;
+        height: 76px;
+        border-radius:10px;
+        background-color: $main-color;
+        border:none;
+        cursor: pointer;
+        &:hover {
+            box-shadow: 0 0 10px rgb(124, 189, 243);
+        }
+    }
+    &__input {
+        position: absolute;
+        top: 602px;
+        left: 260px;
+        margin-left: 15px;
+        padding-left: 15px;
+        width: 420px;
+        height: 76px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+        border: none;
+        z-index: -1;
+        &-btn {
+            width: 50px;
+            height: 50px;
+            border-radius:100%;
+            background-color: $main-color;
+            border: none;
+            z-index: 3;
+            position: absolute;
+            left: 637px;
+            top: 613px;
+            cursor: pointer;
+            &:hover {
+                box-shadow: 0 0 10px rgb(124, 189, 243);
+            }
+        }
+    }
+}
