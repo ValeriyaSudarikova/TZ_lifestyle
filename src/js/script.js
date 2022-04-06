@@ -37,8 +37,44 @@ window.addEventListener('DOMContentLoaded', () => {
     modalCloseUp.addEventListener('click', SignUpClose);
     modalCloseIn.addEventListener('click', SignInClose);
 
+    //slider 
+
+    let slideIndex = 1; 
+    const next = document.querySelector('#right'),
+          prev = document.querySelector('#left'),
+          slides = document.querySelectorAll('.slider__item')
+
+    sliderShow(slideIndex);
 
 
+    function sliderShow(n) {
+
+        if (n > slides.length) {
+            slideIndex = 1;
+        }
+
+        if (n < 1) {
+            slideIndex = slides.length;
+        }
+
+        slides.forEach((item) => item.style.display = 'none');
+
+        slides[slideIndex - 1].style.display = 'block';
+        slides[slideIndex].style.display = 'block';
+        slides[slideIndex + 1].style.display = 'block';
+
+    }
+
+    function plusSlide(n) {
+        sliderShow(slideIndex += n);
+    }
+
+    next.addEventListener('click', function() {
+        plusSlide(1)
+    });
+    prev.addEventListener('click', function() {
+        plusSlide(-1)
+    });
 
 
 });

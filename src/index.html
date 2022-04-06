@@ -5,6 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spacelance</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/favicons//apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/favicons//apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/favicons//apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/favicons//apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/favicons//apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/favicons//apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/favicons//apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/favicons//apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/favicons//apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="icons/favicons//android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicons//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicons//favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicons//favicon-16x16.png">
+    <link rel="manifest" src="icons/favicons/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -126,51 +143,98 @@
                 </h2>
             </div>
             <div class="slider__arrows">
-                <div class="slider__arrow circle">
+                <button id="left" class="slider__arrow circle">
                 <img src="icons/carousel/left.svg" alt="slider's left arrow" class="slider__arrow">    
-                </div>
-                <div class="slider__arrow circle">
-                <img src="icons/carousel/right.svg" alt="slider's right arrow" class="slider__arrow">
-                </div>
+                </button>
+                <button id="right" class="slider__arrow circle">
+                <img src="icons/carousel/right.svg" alt="slider's right arrow" class="slider__arrow ">
+                </button>
             </div>
           </div>
-        <div class="slider__wrapper-slides">
-            <div class="slider__item">
-                <img src="icons/carousel/material_UI.svg" alt="material UI logotype" class="slider__item-logo">
-                <h2 class="slider__item-header text_fz32">Logo Design</h2>
-                <div class="slider__item-descr text_fz24">Need a professional logo with writing underneath for our jewellery company</div>
-                <div class="slider__item-wrap">
-                    <div class="slider__item-price text_fz24 black">Highest bid <br> $500</div>
-                <a href="#" class="slider__item-link text_fz24 link">Apply now</a>
-                </div>
-            </div>
-            <div class="slider__item">
-                <img src="icons/carousel/canva.svg" alt="canva's logotype" class="slider__item-logo">
-                <h2 class="slider__item-header text_fz32">Graphic Design</h2>
-                <div class="slider__item-descr text_fz24">We need a graphic designer with UI/UX skills for our Furniture company</div>
-                <div class="slider__item-wrap">
-                    <div class="slider__item-price text_fz24 black">Highest bid <br> $500</div>
-                <a href="#" class="slider__item-link text_fz24 link">Apply now</a>
-                </div>
-            </div>
-            <div class="slider__item">
-                <img src="icons/carousel/seo.svg" alt="seo logotype" class="slider__item-logo">
-                <h2 class="slider__item-header text_fz32"> Need a SEO </h2>
-                <div class="slider__item-descr text_fz24">Need a SEO for our company who will let our company to a higher level</div>
-                <div class="slider__item-wrap">
-                    <div class="slider__item-price text_fz24 black">Highest bid <br> $300</div>
+            <div class="slider__wrapper-slides">
+                <div class="slider__item">
+                    <img src="icons/carousel/material_UI.svg" alt="material UI logotype" class="slider__item-logo">
+                    <h2 class="slider__item-header text_fz32">Logo Design</h2>
+                    <div class="slider__item-descr text_fz24">Need a professional logo with writing underneath for our jewellery company</div>
+                    <div class="slider__item-wrap">
+                        <div class="slider__item-price text_fz24 black">Highest bid <br> $500</div>
                     <a href="#" class="slider__item-link text_fz24 link">Apply now</a>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <img src="icons/carousel/canva.svg" alt="canva's logotype" class="slider__item-logo">
+                    <h2 class="slider__item-header text_fz32">Graphic Design</h2>
+                    <div class="slider__item-descr text_fz24">We need a graphic designer with UI/UX skills for our Furniture company</div>
+                    <div class="slider__item-wrap">
+                        <div class="slider__item-price text_fz24 black">Highest bid <br> $500</div>
+                    <a href="#" class="slider__item-link text_fz24 link">Apply now</a>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <img src="icons/carousel/seo.svg" alt="seo logotype" class="slider__item-logo">
+                    <h2 class="slider__item-header text_fz32"> Need a SEO </h2>
+                    <div class="slider__item-descr text_fz24">Need a SEO for our company who will let our company to a higher level</div>
+                    <div class="slider__item-wrap">
+                        <div class="slider__item-price text_fz24 black">Highest bid <br> $300</div>
+                        <a href="#" class="slider__item-link text_fz24 link">Apply now</a>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <img src="icons/carousel/material_UI.svg" alt="material UI logotype" class="slider__item-logo">
+                    <h2 class="slider__item-header text_fz32">Logo Design</h2>
+                    <div class="slider__item-descr text_fz24">Need a professional logo with writing underneath for our jewellery company</div>
+                    <div class="slider__item-wrap">
+                        <div class="slider__item-price text_fz24 black">Highest bid <br> $500</div>
+                    <a href="#" class="slider__item-link text_fz24 link">Apply now</a>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <img src="icons/carousel/canva.svg" alt="canva's logotype" class="slider__item-logo">
+                    <h2 class="slider__item-header text_fz32">Graphic Design</h2>
+                    <div class="slider__item-descr text_fz24">We need a graphic designer with UI/UX skills for our Furniture company</div>
+                    <div class="slider__item-wrap">
+                        <div class="slider__item-price text_fz24 black">Highest bid <br> $500</div>
+                    <a href="#" class="slider__item-link text_fz24 link">Apply now</a>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <img src="icons/carousel/seo.svg" alt="seo logotype" class="slider__item-logo">
+                    <h2 class="slider__item-header text_fz32"> Need a SEO </h2>
+                    <div class="slider__item-descr text_fz24">Need a SEO for our company who will let our company to a higher level</div>
+                    <div class="slider__item-wrap">
+                        <div class="slider__item-price text_fz24 black">Highest bid <br> $300</div>
+                        <a href="#" class="slider__item-link text_fz24 link">Apply now</a>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <img src="icons/carousel/material_UI.svg" alt="material UI logotype" class="slider__item-logo">
+                    <h2 class="slider__item-header text_fz32">Logo Design</h2>
+                    <div class="slider__item-descr text_fz24">Need a professional logo with writing underneath for our jewellery company</div>
+                    <div class="slider__item-wrap">
+                        <div class="slider__item-price text_fz24 black">Highest bid <br> $500</div>
+                    <a href="#" class="slider__item-link text_fz24 link">Apply now</a>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <img src="icons/carousel/canva.svg" alt="canva's logotype" class="slider__item-logo">
+                    <h2 class="slider__item-header text_fz32">Graphic Design</h2>
+                    <div class="slider__item-descr text_fz24">We need a graphic designer with UI/UX skills for our Furniture company</div>
+                    <div class="slider__item-wrap">
+                        <div class="slider__item-price text_fz24 black">Highest bid <br> $500</div>
+                    <a href="#" class="slider__item-link text_fz24 link">Apply now</a>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <img src="icons/carousel/seo.svg" alt="seo logotype" class="slider__item-logo">
+                    <h2 class="slider__item-header text_fz32"> Need a SEO </h2>
+                    <div class="slider__item-descr text_fz24">Need a SEO for our company who will let our company to a higher level</div>
+                    <div class="slider__item-wrap">
+                        <div class="slider__item-price text_fz24 black">Highest bid <br> $300</div>
+                        <a href="#" class="slider__item-link text_fz24 link">Apply now</a>
+                    </div>
                 </div>
             </div>
-            <!-- <div class="slider__item">
-                <img src="icons/carousel/seo.svg" alt="seo logotype" class="slider__item-logo">
-                <h2 class="slider__item-header text_fz32">Need a SEO</h2>
-                <div class="slider__item-descr text_fz24">Need a SEO for our company who will let our company to a higher level</div>
-                <div class="slider__item-price text_fz24 black">Highest bid $300</div>
-                <a href="#" class="slider__item-link text_fz24 link">Apply now</a>
-            </div> -->
         </div>
-    </div>
     </section>
     <footer class="footer">
         <div class="container">
@@ -211,8 +275,8 @@
                         Call Us
                     </h2>
                     <div class="footer__item-links">
-                        <a  class='footer__item-location text_fz18'href="#"> <img src="icons/footer/location.svg" alt="icon of location"> Kenya</a> <br>
-                        <a class='footer__item-phone text_fz18' href="tel:+25470000000"> <img src="icons/footer/phone.svg" alt="icon of phone"> +25470000000</a> <br>
+                        <a  class='footer__item-location text_fz18' href="#"> <img src="icons/footer/location.svg" alt="icon of location"> Kenya</a> <br>
+                        <a class='footer__item-phone text_fz18'  href="tel:+25470000000"> <img src="icons/footer/phone.svg" alt="icon of phone"> +25470000000</a> <br>
                         <a class='footer__item-email text_fz18' href="mailto:bluelance@gmail.com"> <img src="icons/footer/email.svg" alt="icon of email"> bluelance@gmail.com</a>
                     </div>
                 </div>
@@ -251,8 +315,6 @@
             </form>
         </div>
     </div>
-    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
