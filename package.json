@@ -19,8 +19,6 @@
     "url": "https://github.com/ValeriyaSudarikova/ninja_mail/issues"
   },
   "homepage": "https://github.com/ValeriyaSudarikova/ninja_mail#readme",
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.26.12",
     "gulp": "^4.0.2",
@@ -30,7 +28,8 @@
     "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^6.2.0",
     "gulp-rename": "^1.4.0",
-    "gulp-sass": "^4.1.0"
+    "gulp-sass": "^4.1.0",
+    "phpmailer/phpmailer": "^6.5"
   },
   "browserslist": [
     "last 1 version",

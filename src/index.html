@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <nav class="menu">
+    <nav id="up" class="menu">
         <div class="container">
             <div class="menu__wrapper">
                 <img src="icons/logo.svg" alt="spacelance logo" class="menu__logo">
@@ -289,13 +289,13 @@
     <div class="overlay">
         <div class="modal modal__sign-up">
             <img src="icons/close.svg" alt="" class="modal__close modal__close-up">
-            <form action="#" class="modal__form">
+            <form action id="form_signUp" class="modal__form">
                 <div class="modal__hello text_fz36">
                     Welcome to <span  class="text_fz36 blue">Spaceland</span>
                 </div>
-                <input class="modal__input name" type="text" placeholder="enter your name">
-                <input class="modal__input pass" type="password" placeholder="enter your password">
-                <input type="password" class="modal__input check" placeholder="repeat your password">
+                <input class="modal__input name" name="name" type="text" placeholder="enter your name">
+                <input id="password" class="modal__input pass" name="password" type="password" placeholder="enter your password">
+                <input name="check" type="password" class="modal__input check" placeholder="repeat your password">
                 <button class="modal__btn text_fz36 white">
                     Sign Up
                 </button>
@@ -306,15 +306,18 @@
             <div class="modal__hello text_fz36">
                 Welcome back to <span  class="text_fz36 blue">Spaceland</span>
             </div>
-            <form action="#" class="modal__form">
-                <input class="modal__input name" type="text" placeholder="enter your name">
-                <input class="modal__input pass" type="password" placeholder="enter your password">
+            <form action id="form_signIn" class="modal__form">
+                <input name="name" class="modal__input name" type="text" placeholder="enter your name">
+                <input class="modal__input pass" name="password" type="password" placeholder="enter your password">
                 <button class="modal__btn text_fz36 white">
                     Sign In
                 </button>
             </form>
         </div>
     </div>
+    <a href="#up" class="scroll-up"> <img src="icons/scroll-up.svg" alt="scroll sign"> </a>
+    <script src="js/jquery.min.js" ></script>
+    <script src="js/jquery.validate.min.js" ></script>
     <script src="js/script.js"></script>
 </body>
 </html>
